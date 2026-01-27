@@ -1,0 +1,47 @@
+@use '../abstracts/variables' as vars;
+
+/* FEATURES SECTION */
+
+.features {
+  padding-top: 2rem;  
+  padding-bottom: 3rem;
+
+  &__description {
+    font-size: 1.25rem;   /* ≈ 20px */
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto 2.5rem;
+    color: vars.$dark-color;
+    text-align: center;
+  }
+}
+
+/*  FEATURE CARD*/
+.feature-card {
+  background-color: vars.$light-color;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(67, 127, 199, 0.08); /* base */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(67, 127, 199, 0.15);
+  }
+
+  &__icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+
+  &__title {
+    color: vars.$dark-color;
+    font-weight: 600;
+  }
+
+&__text {
+  color: vars.$accent-color;
+  font-size: 1rem;   
+  line-height: 1.6;
+  }
+}

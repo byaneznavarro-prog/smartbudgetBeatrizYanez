@@ -1,0 +1,56 @@
+@use '../abstracts/variables' as vars;
+
+.footer {
+  &__brand {
+    text-align: left;
+  }
+
+  /*  NOMBRE DE LA MARCA */
+  &__title {
+    font-size: 1.6rem;      
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.25rem;
+    color: #ffffff;
+  }
+
+  /* SLOGAN */
+  &__tagline {
+    font-size: 0.95rem;
+    color: #adb5bd;   
+  }
+
+  /* LINKS */
+  &__link {
+    font-size: 0.95rem;
+    color: #dee2e6;
+    text-decoration: none;
+
+    &:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  }
+
+  /* ICONOS SOCIALES */
+  &__social-link {
+    font-size: 1.25rem;   
+    color: #dee2e6;
+
+    &:hover {
+      color: vars.$primary-color;
+    }
+  }
+
+  /* MOBILE */
+  @media (max-width: 767px) {
+    &__brand,
+    &__nav {
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 1.4rem;  
+    }
+  }
+}

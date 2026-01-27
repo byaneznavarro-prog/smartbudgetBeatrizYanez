@@ -1,0 +1,76 @@
+@use '../abstracts/variables' as vars;
+
+.header {
+  margin-bottom: 0;
+
+  /*   NAVBAR  */
+  .navbar {
+    flex-wrap: nowrap;
+    padding: 0.5rem 0;
+    margin-bottom: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgba(67, 127, 199, 0.15);
+    z-index: 1030;
+  }
+
+  /*  BRAND / LOGO   */
+  &__brand {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    min-width: 0;
+  }
+
+  &__logo {
+    height:150px;
+    width: auto;
+    max-width: 45vw;
+    object-fit: contain;
+    display: block;
+  }
+
+  /*   NAV LINKS   */
+  .navbar-light {
+    .navbar-nav.header__menu {
+      .nav-link {
+        font-size: 1.25rem;   
+        font-weight: 500;
+        color: vars.$dark-color;
+        padding: 0.5rem 0.75rem;
+      }
+
+      .nav-link:hover {
+        color: vars.$primary-color;
+      }
+    }
+  }
+
+  /*  CTA BUTTON */
+  .btn {
+    font-size: 1rem;
+    padding: 0.45rem 1rem;
+  }
+
+  /*  TOGGLER */
+  .navbar-toggler {
+    flex: 0 0 auto;
+    margin-left: auto;
+    padding: 0.25rem 0.5rem;
+  }
+
+  /*   MOBILE */
+  @media (max-width: 575px) {
+    &__logo {
+      height: 200px;
+      max-width: 60vw;
+    }
+
+    .navbar-light {
+      .navbar-nav.header__menu {
+        .nav-link {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

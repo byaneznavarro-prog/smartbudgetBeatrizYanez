@@ -1,0 +1,17 @@
+// main.scss Manifest File
+
+// abstracts
+@use 'abstracts/variables';
+// vendors
+@use './vendors/bootstrap';
+// base
+
+// layout
+@use "./layout/header";
+@use "./layout/footer";
+// components
+@use "./components/feature_card";
+@use "./components/hero";
+// pages
+
+// themes   
